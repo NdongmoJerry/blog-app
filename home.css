@@ -53,16 +53,16 @@
                          }
 
                  
-h1,h2 {
-    display: block;
-    margin-block-start: 9em;
-    margin-block-end: 3em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    text-align: center;
-    font-size: 25px;
-    color: green;
-}
+                         h1,h2 {
+                            display: block;
+                            margin-block-start: 8em;
+                            margin-block-end: 2em;
+                            margin-inline-start: 0px;
+                            margin-inline-end: 0px;
+                            text-align: center;
+                            font-size: 25px;
+                            color: blue;
+                        }
 
 
 .image {

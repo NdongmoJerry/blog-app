@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <div class="top-nav">
         <nav class="nav" id="nav-bar">
             <ul class nav-list>
@@ -19,7 +20,7 @@
                     <a href="home.php" id="home" class="list">Home</a>
                 </li>
                 <li>
-                    <a href="about.php" id="about" class="list">About</a>
+                    <a href=" about.php" id="about" class="list">About</a>
                 </li>
                 <li>
                     <a href="contact.php" id="contact" class="list">Contact</a>
@@ -33,7 +34,7 @@
                 <li>
                     <a href="login.php" id="login" class="list">Login</a>
                 </li>
-
+            </ul>
         </nav>
     </div>
     <section>

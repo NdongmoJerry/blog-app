@@ -37,6 +37,7 @@ if(isset($_POST['login'])){
 </head>
 
 <body>
+<a href="logout.php">Logout</a>
     <form action=" #" method="post">
         <div class="container">
             <div class="form-control">
@@ -52,12 +53,12 @@ if(isset($_POST['login'])){
             </div>
             <div class="form-control">
                 <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                <a href="registration.php">Click to Login</a>
                 </label>
             </div>
         </div>
         <div class="container">
-            <span class="psw">Forgot <a href="#">password?</a></span>
+            <span class="psw">Forgot <a href="">password?</a></span>
         </div>
     </form>
 </body>

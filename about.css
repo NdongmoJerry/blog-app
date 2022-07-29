@@ -54,15 +54,15 @@ li a:hover {
 
 
 h1,
-h2 {
+h2,h3 {
     display: block;
-    margin-block-start: 9em;
+    margin-block-start: 8em;
     margin-block-end: 3em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     text-align: center;
     font-size: 25px;
-    color: blue;
+    color:green;
 }
 
 
@@ -120,7 +120,9 @@ p {
     font-size: 1.5rem;
     letter-spacing: 2;
     font-family: "Raleway", sans-serif;
+    
 }
+
 
 .contact-link {
     display: flex;

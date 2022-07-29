@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travelling Agency</title>
-    <link rel="stylesheet" href="home.css" type="text/css">
+    <title>About Travelling Agency</title>
+    <link rel="stylesheet" href="about.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -38,8 +38,10 @@
     </section>
     <section>
         <p>
-            We have different categories of cars at our your disposal.Any category has a price to pay depending on
-            your specification.We have the the first class,classic,and the normal category which can be seen below
+            We have different categories of cars at our your disposal.Any category has a price to pay depending
+            on
+            your specification.We have the the first class,classic,and the normal category which can be seen
+            below
 
 
 
