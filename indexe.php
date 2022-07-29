@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travelling Agency</title>
     <link rel="stylesheet" href="index.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -16,31 +16,34 @@
         <nav class="nav" id="nav-bar">
             <ul class nav-list>
                 <li>
-                    <a href="#home" id="home" class="list">Home</a>
+                    <a href="home.php" id="home" class="list">Home</a>
                 </li>
                 <li>
-                    <a href="#about" id="about" class="list">About</a>
+                    <a href="about.php" id="about" class="list">About</a>
                 </li>
                 <li>
-                    <a href="#contact" id="contact" class="list">Contact</a>
+                    <a href="contact.php" id="contact" class="list">Contact</a>
                 </li>
                 <li>
-                    <a href="#registration" id="registration" class="list">Registration</a>
+                    <a href="registration.php" id="registration" class="list">Registration</a>
                 </li>
                 <li>
-                    <a href="#login" id="login" class="list">Login</a>
+                    <a href="user.php" class="list">User</a>
+                </li>
+                <li>
+                    <a href="login.php" id="login" class="list">Login</a>
                 </li>
 
         </nav>
     </div>
     <section>
-        <h1>My First Blog App</h1>
+        <h1>Say goodbye to the payment of ticket stress and queue up in agencies </h1>
     </section>
     <div class="image">
         <div class="column">
             <img src="imagies/bustop.jpeg" />
             <div class="label">
-                School bus
+                Normal bus
             </div>
         </div>
 
@@ -53,13 +56,13 @@
         <div class="column">
             <img src="imagies/normal.jpeg" />
             <div class="label">
-                Normal bus
+                School bus
             </div>
         </div>
         <div class="column">
             <img src="imagies/bustop.jpeg" />
             <div class="label">
-                school bus
+                Normal bus
             </div>
         </div>
         <div class="column">
@@ -78,44 +81,71 @@
         <div class="column">
             <img src="imagies/bustop.jpeg" />
             <div class="label">
-                School bus
+                Normal bus
             </div>
         </div>
 
         <div class="column">
             <img src="imagies/bus.jpeg" />
             <div class="label">
-                Classic bus
+                V.I.P Classic bus
             </div>
         </div>
-        <div class="column">
-            <img src="imagies/bus.jpeg" />
-            <div class="label">
-                Classic bus
-            </div>
-        </div>
+
     </div>
+    <section>
+        <p>
+            Say goodby to the payment of ticket stress.It is the headline of our website travelling Agency
+            which is out to reduce stress and save time for travelers.With this website you donot have to bother
+            yourself going to the
+            agency or bus station before paying your tickets again.The above buses are the different models of cars and
+            the spacies available for each bus
+        </p>
+    </section>
     <section class="contact-section">
-        <h2>let's work together
-            <h2>
-                <p>
-                    You can contact us on..
-                </p>
-                <div class="contact-link">
+        <p>
+            WHO ARE WE
+        </p>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home" id="home" class="list">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" id="about" class="list">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact" id="contact" class="list">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#registration" id="registration" class="list">Registration</a>
+                    </li>
+                    <li>
+                        <a href="#login" id="login" class="list">Login</a>
+                    </li>
 
-                    <a href="https://twitter.com/JerryNdongmo" class="fa fa-twitter" target="_blank"></a>
-                    <a href="https://github.com/NdongmoJerry" class="fa fa-githup"></a>
-                    <a href="https://www.linkedin.com/in/ndongmo-jerry-66b099242/" class="fa fa-linkedin"
-                        target="_blank">
-                    </a>
-                    <a href="https://www.facebook.com/ndongmo.jerrywhite.1/" class="fa fa-facebook" target="_blank"></a>
-                </div>
+            </nav>
+            <p>
+                FOLLOW US ON..
+            </p>
+            <div class="contact-link">
+                <a href="https://twitter.com/JerryNdongmo" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://github.com/NdongmoJerry" class="fa fa-githup"></a>
+                <a href="https://www.linkedin.com/in/ndongmo-jerry-66b099242/" class="fa fa-linkedin" target="_blank">
+                </a>
+                <a href="https://www.facebook.com/ndongmo.jerrywhite.1/" class="fa fa-facebook" target="_blank"></a>
                 <a href="https://github.com/NdongmoJerry" class="fa fa-github" target="_blank"></a>
-                </div>
+                <a href="tel:672625216" target="_blank">Call us now</a>
+            </div>
+        </div>
+    </section>
+    <section>
+
     </section>
     <footer>
         <p>
-            Copyright@2022
+            Copyright 2022@Travel Agency.
         </p>
     </footer>
 </body>

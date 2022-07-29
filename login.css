@@ -1,6 +1,7 @@
 
 form {
     border: 3px solid #f1f1f1;
+
 }
 
 input[type=text],
@@ -10,7 +11,8 @@ input[type=password] {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-     box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
 }
 
 
@@ -29,14 +31,19 @@ button:hover {
     opacity: 0.8;
 }
 
+* {
+    box-sizing: border-box
+}
 .container {
     padding: 16px;
-}
+    width: 100%;
+    margin: 4.125rem auto 0 auto;
 
+}
 
 span.psw {
     float: right;
-    padding-top: 16px;
+    padding-top: 11px;
 }
 
 
@@ -46,3 +53,33 @@ span.psw {
         float: none;
     }
 }
+
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 480px) {
+    form {
+        padding: 2.5rem;
+    }
+}
+
+
+form {
+    background: green;
+    padding: 2.5rem 0.625rem;
+    border-radius: 1.25rem;
+    width: 50%;
+    
+
+
+}
+
+
+
+
+
