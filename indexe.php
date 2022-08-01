@@ -17,7 +17,7 @@
         <nav class="nav" id="nav-bar">
             <ul class nav-list>
                 <li>
-                    <a href="home.php" id="home" class="list">Home</a>
+                    <a href="indexe.php" id="home" class="list">Home</a>
                 </li>
                 <li>
                     <a href=" about.php" id="about" class="list">About</a>
@@ -26,7 +26,7 @@
                     <a href="contact.php" id="contact" class="list">Contact</a>
                 </li>
                 <li>
-                    <a href="registration.php" id="registration" class="list">Registration</a>
+                    <a href="register.php" id="register" class="list">Register</a>
                 </li>
                 <li>
                     <a href="user.php" class="list">User</a>
@@ -111,19 +111,19 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#home" id="home" class="list">Home</a>
+                        <a href="home.php" id="home" class="list">Home</a>
                     </li>
                     <li>
-                        <a href="#about" id="about" class="list">About</a>
+                        <a href="about.php" id="about" class="list">About</a>
                     </li>
                     <li>
-                        <a href="#contact" id="contact" class="list">Contact</a>
+                        <a href="contact.php" id="contact" class="list">Contact</a>
                     </li>
                     <li>
-                        <a href="#registration" id="registration" class="list">Registration</a>
+                        <a href="register.php" id="register" class="list">Register</a>
                     </li>
                     <li>
-                        <a href="#login" id="login" class="list">Login</a>
+                        <a href="login.php" id="login" class="list">Login</a>
                     </li>
 
             </nav>

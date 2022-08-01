@@ -1,73 +1,74 @@
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 3rem;
+}
+
+nav {
+    display: block;
+    float: none;
 
 
-                .nav-list a {
-                    display: block;
-                    font-size: 2.2rem;
-                    padding: 3rem;
-                }
 
-                                 nav{
-                                    display:block;
-                                    float: none;
-                                        
-                                       
-                                    
-                                 }
-                 .nav {
-                     display: flex;
-                     justify-content: flex-end;
-                     position: fixed;
-                     top: 0px;
-                     left: 0px;
-                     height: 20%;
-                     width: 100%;
-                     background: var(--main-red);
-                     box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
-                     z-index: 10;
-                     
-                     
-                 }
-       
-           :root {
-               --main-white: #f0f0f0;
-               --main-red:#303841;
-               --main-blue: #45567d;
-               --main-gray: #303841;
-           }
+}
 
-           li{
-            display: inline;
-            float:left;
-            
-           }
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 20%;
+    width: 100%;
+    background: var(--main-red);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
 
-                   a {
-                       text-decoration: none;
-                       color: var(--main-white);
-                       padding: 10px;
-                       display: block;
-                       
-                   }
-                         li a:hover {
-                             background-color: #111;
-                         }
 
-                 
-                         h1,h2 {
-                            display: block;
-                            margin-block-start: 8em;
-                            margin-block-end: 2em;
-                            margin-inline-start: 0px;
-                            margin-inline-end: 0px;
-                            text-align: center;
-                            font-size: 25px;
-                            color: blue;
-                        }
+}
+
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #303841;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+li {
+    display: inline;
+    float: left;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+    padding: 10px;
+    display: block;
+
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+h1,
+h2 {
+    display: block;
+    margin-block-start: 8em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    font-size: 25px;
+    color: blue;
+}
 
 
 .image {
     display: grid;
-   
+
     grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
@@ -75,7 +76,7 @@
     column-gap: 3rem;
     margin-bottom: 1rem;
     grid-template-columns: auto auto auto;
-   
+
 
 }
 
@@ -90,7 +91,8 @@ footer {
     justify-content: space-evenly;
     padding: 2rem;
     border-top: 7px solid orangered;
-    background-color:var(--main-gray); ;
+    background-color: var(--main-gray);
+    ;
     width: 100%;
 }
 
@@ -106,7 +108,7 @@ footer {
     height: 50vh;
     padding: 2rem;
     background: purple;
-    
+
 }
 
 p {
@@ -120,7 +122,6 @@ p {
     font-family: "Raleway", sans-serif;
 }
 
-.contact-link{
+.contact-link {
     display: inline;
 }
-

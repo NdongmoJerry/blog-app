@@ -16,7 +16,7 @@
         <nav class="nav" id="nav-bar">
             <ul class nav-list>
                 <li>
-                    <a href="home.php" id="home" class="list">Home</a>
+                    <a href="indexe.php" id="home" class="list">Home</a>
                 </li>
                 <li>
                     <a href="about.php" id="about" class="list">About</a>
@@ -24,12 +24,11 @@
                 <li>
                     <a href="contact.php" id="contact" class="list">Contact</a>
                 </li>
-                <li>
-                    <a href="registration.php" id="registration" class="list">Registration</a>
                 </li>
                 <li>
-                    <a href="login.php" id="login" class="list">Login</a>
+                    <a href="logout.php" id="contact" class="list">logout</a>
                 </li>
+
 
         </nav>
     </div>
@@ -97,7 +96,7 @@
                         <a href="contact.php" id="contact" class="list">Contact</a>
                     </li>
                     <li>
-                        <a href="registration.php" id="registration" class="list">Registration</a>
+                        <a href="register.php" id="registration" class="list">Registration</a>
                     </li>
                     <li>
                         <a href="login.php" id="login" class="list">Login</a>

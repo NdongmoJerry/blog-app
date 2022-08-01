@@ -1,66 +1,59 @@
 <?php
 include('config.php');
+session_start();
+if(isset($_POST['submit'])){ 
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $pass = md5($_POST['password']);
+    $cpass = md5($_POST['cpassword']);
+    $user_type = $_POST['user_type'] ;
 
-if(isset($_POST['login'])){ 
+   
+$select = " SELECT * FROM register WHERE email = '$email' && password = '$pass' ";
 
-    $name = $_POST['username'] ;
-    $password = $_POST['password'];
-  
-    $query = "INSERT INTO login( username,  password)
-    VALUES('$username', '$password')";
+$result = mysqli_query($conn, $select);
 
+if(mysqli_num_rows($result) > 0) {
+   $_SESSION ['email'] = $email;
 
- $run = mysqli_query($conn, $query) or die(mysqli_error());
- if($run){
-    echo "submission successful";
- }else{
-    echo "not successfully submitted";
- }
- 
-
+   header('location:home.php');
+}else{
+    $error[] = 'incorrect email or password';
+}
 }
 
 ?>
 
 
+<DOCTYPE html>
+    <html lang="en">
 
-<!DOCTYPE html>
-<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="login.css" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-</head>
+    <body>
+        <div class="form-container">
+            <form action="" method="POST">
+                <h3>Login Now</h3>
+                <?php
+                if(isset($error)){
+                    foreach($error as $error){
+                         echo '<span class="error-msg">'.$error.'</span>';
+                    };
+                };
+                ?>
 
-<body>
-<a href="logout.php">Logout</a>
-    <form action=" #" method="post">
-        <div class="container">
-            <div class="form-control">
-                <label for=" name">Username</label>
-                <input type="text" placeholder="Enter Username" name="username" required>
-            </div>
-            <div class="form-control">
-                <label for="psw"> Password</label>
+                <input type="email" placeholder="Enter Email" name="email" required>
                 <input type="password" placeholder="Enter Password" name="password" required>
-            </div>
-            <div class="form-control">
-                <button type="submit" name="login">Login</button>
-            </div>
-            <div class="form-control">
-                <label>
-                <a href="registration.php">Click to Login</a>
-                </label>
-            </div>
+                <input type="submit" value="Login now" class="form-btn" name=" submit">
+                <p>don't have an account? <a href="register.php">Register Now</a>.</p>
+            </form>
         </div>
-        <div class="container">
-            <span class="psw">Forgot <a href="">password?</a></span>
-        </div>
-    </form>
-</body>
+    </body>
 
-</html>
+    </html>
