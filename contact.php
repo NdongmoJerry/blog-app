@@ -1,37 +1,56 @@
+
+
+<?php
+session_start();
+include('connection.php');
+
+if(isset($_POST['submit'])){ 
+
+    $name = $_POST['name'] ;
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+$query = "INSERT INTO contact( name, email, message)
+VALUES('$name', '$email', '$message')";
+
+$run = mysqli_query($conn, $query) or die(mysqli_error());
+if($run){
+echo "Thanks for contacting us. We will get back you!";
+}else{
+echo "not successfully submitted";
+}
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="contact.css" type="text/css">
+    <title>Contact </title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+
 <body>
-<div class="container">
-  <form action="action_page.php">
+    <div class="form-container">
+        <form action="" method="post">
+            <h3>Contact Us Now</h3>
+            <input type="text" name="name" placeholder="Enter Name" required>
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <input type="text" name="message" placeholder="Message" class="comment" required>
+            <input type="submit" name="submit" value="Submit" class="form-btn">
+            <p>already have an account? <a href="login.php">login now</a></p>
+        
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </form>
+    </div>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
-
-    
 </body>
+
 </html>

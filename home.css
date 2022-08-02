@@ -125,3 +125,8 @@ p {
 .contact-link {
     display: inline;
 }
+
+
+.label{
+    text-align: center;
+}
